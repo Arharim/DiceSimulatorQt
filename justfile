@@ -1,4 +1,4 @@
-# DiceSimulatorQt – common commands. `just` lists recipes.
+# DiceSimulatorQt - common commands. `just` lists recipes.
 
 build_dir := "build"
 bin := build_dir / "DiceSimulatorQt"

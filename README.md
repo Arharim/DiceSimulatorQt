@@ -6,7 +6,7 @@ port of the C#/WPF original
 ([Arharim/DiceSimulator](https://github.com/Arharim/DiceSimulator)). Runs on
 Linux, Windows, and macOS without Wine.
 
-**0.1.0** – feature parity with the original plus input validation fixes.
+**0.1.0** - feature parity with the original plus input validation fixes.
 Fair dice and sums only: no weighted dice, no modifiers (`2d6+3` ignores the
 `+3`), no rerolls.
 
@@ -21,7 +21,6 @@ Fair dice and sums only: no weighted dice, no modifiers (`2d6+3` ignores the
 | `tests/test_dice.cpp` | Unit tests of the core, analytic expectations |
 | `assets/` | d20 icon from the original |
 | `justfile` | `just build`, `just run`, `just test`, `just fmt`, `just clean` |
-| `todo.md` | Work journal (Russian) |
 
 ## Build
 

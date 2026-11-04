@@ -68,8 +68,8 @@ void testParse() {
   expectParseError("   ");
   expectParseError("abc");
   expectParseError("42");
-  expectParseError("0d6");              // нулевое количество — теперь явная ошибка
-  expectParseError("1d0");              // ноль граней — явная ошибка
+  expectParseError("0d6");              // нулевое количество - теперь явная ошибка
+  expectParseError("1d0");              // ноль граней - явная ошибка
   expectParseError("1d1001");           // граней больше kMaxEdges
   expectParseError("101d6");            // в группе больше kMaxCountPerGroup
   expectParseError("250d6 250d6");      // суммарно больше kMaxTotalDice
