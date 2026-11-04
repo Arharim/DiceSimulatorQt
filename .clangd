@@ -1,0 +1,10 @@
+# Shared by every OS. The compile database lives in build/ (CMake
+# CMAKE_EXPORT_COMPILE_COMMANDS + the compile_commands.json symlink).
+
+CompileFlags:
+  CompilationDatabase: build
+  Add:
+    - -Isrc
+    - -ferror-limit=0
+    - -Wall
+    - -Wextra
