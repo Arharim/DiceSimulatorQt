@@ -1,0 +1,21 @@
+# Build and the compile database (compile_commands.json is a symlink into
+# build/ for clangd; it points at a generated file)
+/build/
+compile_commands.json
+
+# clangd index
+.cache/
+
+# Qt Creator / IDE
+*.user
+*.pro.user*
+CMakeLists.txt.user*
+.idea/
+.vs/
+.vscode/*.code-workspace
+
+# OS / editor
+Thumbs.db
+.DS_Store
+*~
+*.swp
