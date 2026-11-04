@@ -6,6 +6,9 @@ compile_commands.json
 # clangd index
 .cache/
 
+# Local work journal (machine paths, scratch notes). Not part of the project.
+/todo.md
+
 # Qt Creator / IDE
 *.user
 *.pro.user*
