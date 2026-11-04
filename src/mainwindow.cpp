@@ -106,7 +106,7 @@ MainWindow::MainWindow() {
   rollsEdit_->setMaximumWidth(150);
   rollButton_ = new QPushButton(QStringLiteral("Бросить дайсы"));
   chartToggle_ = new QToolButton;
-  chartToggle_->setText(QStringLiteral("&#128260;")); // 🔄
+  chartToggle_->setText(QStringLiteral("🔄"));
   chartToggle_->setToolTip(QStringLiteral("Переключить вид (Текст/График)"));
   chartToggle_->setCheckable(true);
 
