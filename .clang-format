@@ -1,0 +1,39 @@
+# clang-format 15+. LLVM base, как в siliscope, стандарт c++20.
+BasedOnStyle: LLVM
+Language: Cpp
+Standard: c++20
+ColumnLimit: 100
+IndentWidth: 2
+UseTab: Never
+LineEnding: LF
+InsertNewlineAtEOF: true
+ReflowComments: true
+
+# Braces / wrapping
+BreakBeforeBraces: Attach
+InsertBraces: true
+AllowShortFunctionsOnASingleLine: Inline
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+PackConstructorInitializers: NextLine
+BinPackArguments: false
+BinPackParameters: false
+
+PointerAlignment: Right
+ReferenceAlignment: Pointer
+QualifierAlignment: Leave
+
+# Includes: project → Qt → STL/system
+SortIncludes: CaseSensitive
+IncludeBlocks: Regroup
+IncludeCategories:
+  - Regex: '^"(dice|chartwidget|mainwindow)\.h"'
+    Priority: 1
+  - Regex: '^<Qt'
+    Priority: 2
+  - Regex: '^<.*'
+    Priority: 3
+  - Regex: '.*'
+    Priority: 4
+
+PenaltyReturnTypeOnItsOwnLine: 200
